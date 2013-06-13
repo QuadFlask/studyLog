@@ -9,16 +9,20 @@
 
 #### js파일 압축(이라기 보단 합치기!)
 `cat *.js > app.js`
+또는 아에 압축! -> GZip
 
 cat 명령의 결과를 app.js에 박는다. 이런건 보통 빌드툴로 하게된다.
 jQuery 의 경우 그런트? 노드로 관리?
+
+[Grunt](http://gruntjs.com/)를 이용해서 js 압축하기~
+
+
 
 
 #### 1. javascript 파일은 `</body>` 태그 바로 위에!
 
 
-#### 2. 스코프 관리 - 지역변수 접근이 빠르기 때문에 자주쓰는건 지역변수로 선언후 사용
-(캐싱이 기본!)
+#### 2. 스코프 관리 - 지역변수 접근이 빠르기 때문에 자주쓰는건 지역변수로 선언후 사용(캐싱)
 ex)
 ```javascript
 function(){
@@ -44,6 +48,7 @@ new Array() -> []
 #### 6. [PageSpeed Insights (Chrome extention - google)](http://goo.gl/hoJzt)
 page load 최적화 관련해서 성능을 올릴 수 있는 팁? 제공해줌.ㅎㅎ
 
+
 #### 7. HTTP 를 이해!
 request
 - method
@@ -60,3 +65,4 @@ response
 ```
 - header - content-type=text/html | zip?
 - body
+
