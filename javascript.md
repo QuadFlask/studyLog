@@ -1,4 +1,4 @@
-자바 스크립트 성능
+## 자바 스크립트 성능
 
 [http://prezi.com/ehj7w5coi4gp/javascript/](http://prezi.com/ehj7w5coi4gp/javascript/)
 
@@ -22,7 +22,7 @@ ex)
 ```javascript
 function(){
   var doc = document;
-  doc.asdasd
+  doc.~~~
 }
 ```
 
@@ -33,15 +33,29 @@ new Array() -> []
 ```
 
 
-#### 4. [CDN(content delivery network)](http://goo.gl/U4bdT)
+#### 4. [CDN(content delivery network)](http://goo.gl/U4bdT) 활용!
 
 
 #### 5. [JSPref](http://jsperf.com/jquery-css-vs-native-dom/16)
-해당 os, browser 별 성능 표 제공ㅋ
+해당 os, browser 별 성능 표 제공.ㅎㅎ
 
 
 #### 6. [PageSpeed Insights (Chrome extention - google)](http://goo.gl/hoJzt)
 page load 최적화 관련해서 성능을 올릴 수 있는 팁? 제공해줌.ㅎㅎ
 
+#### 7. HTTP 를 이해!
+request
+- method
+- uri
+- data
 
-
+response
+- header
+ - status
+```
+200 ok / 
+4xx client error / 
+5xx server error
+```
+- header - content-type=text/html | zip?
+- body
