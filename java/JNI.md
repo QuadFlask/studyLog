@@ -12,16 +12,14 @@ JNI : Java Native Interface
 
 ### 강좌1
 
-[JNI programming - (1) hello, world !](http://forum.falinux.com/zbxe/index.php?mid=lecture_tip&page=19&document_srl=569914)
-[JNI programming - (5) 배열 다루기 2](http://forum.falinux.com/zbxe/index.php?document_srl=571214&mid=lecture_tip)
-[JNI programming - (3) 문자열 다루기](http://forum.falinux.com/zbxe/index.php?mid=lecture_tip&page=18&document_srl=570754)
-[JNI programming - (4) 배열 다루기](http://forum.falinux.com/zbxe/index.php?document_srl=570993&mid=lecture_tip)
+- [JNI programming - (1) hello, world !](http://forum.falinux.com/zbxe/index.php?mid=lecture_tip&page=19&document_srl=569914)
+- [JNI programming - (2) 기본 변수형 다루기](http://forum.falinux.com/zbxe/index.php?mid=lecture_tip&page=19&document_srl=570118)
+- [JNI programming - (3) 문자열 다루기](http://forum.falinux.com/zbxe/index.php?mid=lecture_tip&page=18&document_srl=570754)
+- [JNI programming - (4) 배열 다루기](http://forum.falinux.com/zbxe/index.php?document_srl=570993&mid=lecture_tip)
+- [JNI programming - (5) 배열 다루기 2](http://forum.falinux.com/zbxe/index.php?document_srl=571214&mid=lecture_tip)
+- [1](http://blog.bagesoft.com/805)
+- [2](http://samse.tistory.com/entry/JNI-%EC%9A%94%EC%95%BD-1)
 
-[1](http://blog.bagesoft.com/805)
-[2](http://samse.tistory.com/entry/JNI-%EC%9A%94%EC%95%BD-1)
 
 
-
-### java.lang.library 어쩌고 에러는...
-
-[1](http://ohgyun.com/253)
+### [java.lang.library 어쩌고 에러는...](http://ohgyun.com/253)
