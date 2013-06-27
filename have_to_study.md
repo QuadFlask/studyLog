@@ -13,7 +13,7 @@
  - [Log4J](http://logging.apache.org/log4j/2.x/)
    + [Eclipse console log coloring](http://blog.outsider.ne.kr/727)
  - [IntelliJ IDEA tips](http://blogs.jetbrains.com/idea/2012/10/intellij-idea-productivity-tips-part-1/)
-
+ - [Gradle - Automation evoled?](http://www.gradle.org/)
 
 ****
 
@@ -28,6 +28,18 @@
  - [Android-Query](https://github.com/androidquery/androidquery)
  - [Android-PullToRefresh](https://github.com/chrisbanes/Android-PullToRefresh) - About ['Pull to Refresh'](http://story.pxd.co.kr/m/711)
  
+
+****
+
+
+### Hack
+
+ - [BOF - Buffer OverFlow](http://en.wikipedia.org/wiki/Buffer_overflow)
+ - [FSB - Format String Bug](http://proneer.tistory.com/entry/FormatString-%ED%8F%AC%EB%A7%B7%EC%8A%A4%ED%8A%B8%EB%A7%81Format-String-Attack)
+ - [Return-to-libc attack](http://en.wikipedia.org/wiki/Return-to-libc_attack)
+ - [ROP - Return Oriented Programming](http://teamcrak.tistory.com/332)
+ - [http://overthewire.org/](http://overthewire.org/)
+ - [We Chall](http://www.wechall.net/)
 
 ****
 
