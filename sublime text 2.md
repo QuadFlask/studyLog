@@ -22,3 +22,8 @@ API 코드 힌트 도와주는 녀석
 #### [Alignment](http://bnufactory.com/2013/05/sublime-text-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-alignment/)
 
 = 을 기준으로 앞에 공백을채워줘서 이쁘게 보이게 해주는 녀석
+
+
+#### [SFTP](http://blog.naver.com/PostView.nhn?blogId=hanchiro&logNo=30136872728)
+
+서버에 업로드 편리하게. [1](http://2thet0p.tistory.com/3)
