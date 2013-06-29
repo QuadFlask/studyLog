@@ -57,4 +57,4 @@
 
 > [InstaCode](http://instacod.es/)<br>![](http://instacod.es/file/65859)
 
-> [10 Best JS Drawing Libs](http://javascript.open-libraries.com/utilities/drawing/10-best-javascript-drawing-and-canvas-libraries/)
+> [TDD 로 LineRead 만드는 동영상](http://xper.80port.net/LineReaderTdd/)
