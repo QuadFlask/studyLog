@@ -22,6 +22,8 @@
 
 [Gradient - 원형 리니어? - sweep](http://www.tipssoft.com/bulletin/board.php?bo_table=FAQ&wr_id=1099)
 
+![](http://i.stack.imgur.com/A12vr.png)
+
  - [Android Reference](http://developer.android.com/reference/android/graphics/SweepGradient.html)
  
  - [StackOverflow - Answer](http://stackoverflow.com/questions/2836098/how-to-fill-a-path-in-android-with-a-linear-gradient)
