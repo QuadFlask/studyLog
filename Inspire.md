@@ -6,6 +6,8 @@
 
 [http://wonderfl.net/c/U3I3](http://wonderfl.net/c/U3I3)
 
+[3D 지렁이 게임](http://dl.dropboxusercontent.com/u/20175575/site/flashmafia/qbs.02.LCD/index.html)
+
 
 ### 폭팔 이펙트 ㄱㄱ
 
@@ -44,6 +46,8 @@
 [http://codepen.io/BrianGenisio/pen/juDbL](http://codepen.io/BrianGenisio/pen/juDbL)
 
 [http://codepen.io/grgrdvrt/pen/bywBt](http://codepen.io/grgrdvrt/pen/bywBt)
+
+[기름 덩어리?](http://dl.dropboxusercontent.com/u/20175575/site/flashmafia/mooflow.02/index.html)
 
 
 ### css 로 스도쿠 로직짬....ㄷㄷㄷ
