@@ -6,6 +6,8 @@
 
 [이클립스 설정방법](https://github.com/excilys/androidannotations/wiki/Eclipse-Project-Configuration)
 
+[Available annotations](https://github.com/excilys/androidannotations/wiki/AvailableAnnotations)
+
 
 간단하게 말하자면, 
 `XXX-api.jar` 은 실제로 `apk`에 포함되는것이고, `XXX.jar`은 컴파일타임에 필요한것!
