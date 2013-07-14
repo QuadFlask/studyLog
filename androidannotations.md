@@ -1,4 +1,4 @@
-# [AndroidAnnotations 사용법](https://github.com/excilys/androidannotations/wiki)
+# [AndroidAnnotations](https://github.com/excilys/androidannotations/wiki)
 
 [위키](https://github.com/excilys/androidannotations/wiki)
 
@@ -50,4 +50,9 @@ Roboguice는 RoboActivity를 상속해야되던데 그러면 좀 제한적인듯
 ## 팁
 
 
+[`@Background`]
+
+Background 쓰레드에서 실행하도록 해줌. 오 졸라 편한듯??
+
+그런데, 여기서 토스트 메시지를뿌릴려고  하니 에러 작렬....아! 토스트 메시지는 Ui 니까 `@UiThread` 에서 실행해야 하는듯. 해보니 그런거 같음.
 
