@@ -25,6 +25,11 @@
 
 [Android with InteliJ](http://goo.gl/4u15G)
 
+[Pull to Refresh lib](https://github.com/chrisbanes/Android-PullToRefresh)
+
+페이스북 UI/UX 에서 사용한 Pull to refresh!!
+
+
 [Gradient - 원형 리니어? - sweep](http://www.tipssoft.com/bulletin/board.php?bo_table=FAQ&wr_id=1099)
 
 ![](http://i.stack.imgur.com/A12vr.png)
