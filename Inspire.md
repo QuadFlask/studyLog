@@ -85,3 +85,12 @@
 
 ### Typography
 [http://wonderfl.net/c/abv6](http://wonderfl.net/c/abv6)
+
+
+### Fluid
+[http://wonderfl.net/c/7EAn](http://wonderfl.net/c/7EAn)
+Grant Kot's Multiphase Fluid 2.0
+
+..Multi~Cleaned, Multi~Optimized, from Java code : http://grantkot.com/Multiphase/Liquid.html
+
++ great optimizations from : http://wonderfl.net/c/2lgo#code_forked
