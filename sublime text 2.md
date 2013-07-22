@@ -27,3 +27,11 @@ API 코드 힌트 도와주는 녀석
 #### [SFTP](http://blog.naver.com/PostView.nhn?blogId=hanchiro&logNo=30136872728)
 
 서버에 업로드 편리하게. [1](http://2thet0p.tistory.com/3)
+
+
+#### [Free Course](http://net.tutsplus.com/articles/news/perfect-workflow-in-sublime-text-free-course/)
+
+섭라임 사용법? 동영상...But 영어
+
+
+#### [Open tutorial](http://opentutorials.org/course/671/3595)
