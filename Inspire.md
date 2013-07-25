@@ -53,6 +53,8 @@
 
 [기름 덩어리?](http://dl.dropboxusercontent.com/u/20175575/site/flashmafia/mooflow.02/index.html)
 
+[MAZE 생성하기? http://wonderfl.net/c/hOwG](http://wonderfl.net/c/hOwG)
+
 
 ### css 로 스도쿠 로직짬....ㄷㄷㄷ
 
