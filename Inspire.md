@@ -55,6 +55,8 @@
 
 [MAZE 생성하기? http://wonderfl.net/c/hOwG](http://wonderfl.net/c/hOwG)
 
+[Fish cloud](http://wonderfl.net/c/iGnr)
+
 
 ### css 로 스도쿠 로직짬....ㄷㄷㄷ
 
