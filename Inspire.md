@@ -57,6 +57,8 @@
 
 [Fish cloud](http://wonderfl.net/c/iGnr)
 
+[폴라 클락처럼 되있는데, 겹쳐있어서 좀더 세련된듯](http://codepen.io/Synvox/pen/zFgps)
+
 
 ### css 로 스도쿠 로직짬....ㄷㄷㄷ
 
