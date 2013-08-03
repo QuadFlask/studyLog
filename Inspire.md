@@ -59,6 +59,10 @@
 
 [폴라 클락처럼 되있는데, 겹쳐있어서 좀더 세련된듯](http://codepen.io/Synvox/pen/zFgps)
 
+[마인드맵? 비스무리](http://codepen.io/planetoftheweb/pen/CdqcD)
+
+[Dragable overflow](http://codepen.io/pouretrebelle/pen/cxLDh)
+
 
 ### css 로 스도쿠 로직짬....ㄷㄷㄷ
 
