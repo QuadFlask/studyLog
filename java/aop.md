@@ -25,7 +25,7 @@
 
 - **Pointcut** 
 
- + 
+ + **JoinPoint** 의 부분 집합...? (실제로 **Advice**가 **JointPoint** 적용된 스프링 정규표현식이나 **AspectJ**의 문법을 이용하여 **Pointcut**을 정의 할 수 있다.)
 
 - **Weaving**
 
@@ -70,3 +70,62 @@
 ### PointCut
 
 > Pointcut : JoinPoint의 부분 집합
+
+
+
+## Example
+
+***applicationContext.xml***
+
+``` xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:p="http://www.springframework.org/schema/p" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<aop:aspectj-autoproxy />
+
+	<bean id="performanceTraceAspect" class="com.flask.springs.ProfilingAspect" />
+
+	<bean id="writeArticleService" class="com.flask.springs.WriteArticleServiceImpl">
+		<property name="articleDao" ref="articleDao"></property>
+	</bean>
+
+	<bean id="articleDao" class="com.flask.springs.MySqlArticleDao" />
+
+</beans>
+```
+
+***ProfilingAspect.java***
+
+``` java
+@Aspect
+public class ProfilingAspect {
+ @Pointcut("execution(public * com.flask.springs..*(..))")
+	private void profileTarget() {
+	}
+
+	@Around("profileTarget()")
+	public Object trace(ProceedingJoinPoint joinPoint) throws Throwable {
+		String signatureString = joinPoint.getSignature().toShortString();
+		System.out.println(signatureString + "시작");
+		long start = System.currentTimeMillis();
+
+		try {
+			Object result = joinPoint.proceed();
+			return result;
+		} finally {
+			long finish = System.currentTimeMillis();
+			System.out.println(signatureString + "종료, 실행시간 :" + (finish - start) + "ms");
+		}
+	}
+}
+
+```
