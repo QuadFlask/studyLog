@@ -1,4 +1,4 @@
-# AOP (Aspect Oriented Programming)
+# [AOP (Aspect Oriented Programming)](http://openframework.or.kr/framework_reference/spring/ver2.x/html/aop.html)
 
 > 문제를 바라보는 관점을 기준으로 프로그래밍 하는 기법?
 
@@ -70,6 +70,9 @@
 ### PointCut
 
 > Pointcut : JoinPoint의 부분 집합
+
+- [Pointcut 표현식](http://blog.naver.com/PostView.nhn?blogId=chocolleto&logNo=30086024618)
+- 
 
 
 
