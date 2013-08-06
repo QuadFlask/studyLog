@@ -65,6 +65,10 @@
 
 [http://codepen.io/EvanWard/pen/mFlno](http://codepen.io/EvanWard/pen/mFlno)
 
+[http://codepen.io/ishibashijun/pen/zJmyI](http://codepen.io/ishibashijun/pen/zJmyI)
+
+[http://codepen.io/EvanWard/pen/rxeEa](http://codepen.io/EvanWard/pen/rxeEa)
+
 
 ### css 로 스도쿠 로직짬....ㄷㄷㄷ
 
