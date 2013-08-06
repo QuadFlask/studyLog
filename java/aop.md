@@ -132,3 +132,21 @@ public class ProfilingAspect {
 }
 
 ```
+
+
+#### 수식어 패턴
+
+`execution(수식어패턴? 리턴타입패턴 패키지패턴?이름패턴(파라미터패턴)`
+
+`execution(public * com.flask.springs..*(..))"`
+
+
+접근제한자가 *public*,
+
+리턴 타입은 *모든 타입*,
+
+패키지는 *com.flask.spring안의 0개 이상 패키지들*,
+
+이름은 *모든 이름*,
+
+파라미터는 *0개 이상*
