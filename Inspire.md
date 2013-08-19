@@ -69,6 +69,8 @@
 
 [http://codepen.io/EvanWard/pen/rxeEa](http://codepen.io/EvanWard/pen/rxeEa)
 
+[LED시계. 잔상이 남는게 좀더 이쁜듯.](http://codepen.io/ShamsulAmry/pen/Kmzcs)
+
 
 ### css 로 스도쿠 로직짬....ㄷㄷㄷ
 
