@@ -14,6 +14,7 @@
 // cmd + shift + A : action, + method -> extract method only selections.
 //                           + variable -> make local variable.
 //                           + if intelij find matching some structures it will be extract together.
+//                           + push members down
 // cmd + D : duplicate line
 // cmd + Y : delete line
 
