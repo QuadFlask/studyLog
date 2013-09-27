@@ -133,3 +133,7 @@ Grant Kot's Multiphase Fluid 2.0
 ### 파이어
 
 [http://wonderfl.net/c/u0pb](http://wonderfl.net/c/u0pb)
+
+### 튜링 패턴??
+
+[http://wonderfl.net/c/uJeG](http://wonderfl.net/c/uJeG)
