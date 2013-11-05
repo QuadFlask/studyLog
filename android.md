@@ -1,4 +1,4 @@
-### Good desig/function views
+### Good design/function views
 
 [Actionbarsherlock](http://actionbarsherlock.com/index.html)
 
@@ -37,3 +37,14 @@
  - [Android Reference](http://developer.android.com/reference/android/graphics/SweepGradient.html)
  
  - [StackOverflow - Answer](http://stackoverflow.com/questions/2836098/how-to-fill-a-path-in-android-with-a-linear-gradient)
+
+
+Insprie 
+
+http://www.androidviews.net/
+
+안드로이드 뷰 관련 오픈소스 총집함.
+
+http://androidniceties.tumblr.com/
+
+안드로이드 베스트프랙티스 UI 디자인 모음 
