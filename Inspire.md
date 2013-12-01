@@ -149,3 +149,23 @@ Grant Kot's Multiphase Fluid 2.0
 ### Circles
 
 [http://wonderfl.net/c/q8Tnl](http://wonderfl.net/c/q8Tnl)
+
+
+### Mosaic picture effect
+
+[http://codepen.io/ksmth/pen/uqCrL](http://codepen.io/ksmth/pen/uqCrL)
+
+
+### CSS3 Switch
+
+[http://codepen.io/cl0udc0ntr0l/pen/xhBtF](http://codepen.io/cl0udc0ntr0l/pen/xhBtF)
+
+
+### lines - Plexus G
+
+[http://codepen.io/geekuillaume/pen/kFIsg](http://codepen.io/geekuillaume/pen/kFIsg)
+
+
+### Cloud
+
+[http://codepen.io/spite/pen/subGh](http://codepen.io/spite/pen/subGh)
