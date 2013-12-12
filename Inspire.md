@@ -169,3 +169,13 @@ Grant Kot's Multiphase Fluid 2.0
 ### Cloud
 
 [http://codepen.io/spite/pen/subGh](http://codepen.io/spite/pen/subGh)
+
+
+### Aperture Sicience
+
+[http://codepen.io/hackthevoid/pen/FiGuv](http://codepen.io/hackthevoid/pen/FiGuv)
+
+
+### Hexagon
+
+[http://codepen.io/nakakaz11/pen/hAjGm](http://codepen.io/nakakaz11/pen/hAjGm)
