@@ -179,3 +179,8 @@ Grant Kot's Multiphase Fluid 2.0
 ### Hexagon
 
 [http://codepen.io/nakakaz11/pen/hAjGm](http://codepen.io/nakakaz11/pen/hAjGm)
+
+
+### Realtime? Earth wind
+
+[http://earth.nullschool.net/#current/wind/isobaric/1000hPa/orthographic=-232.01,33.08,3000](http://earth.nullschool.net/#current/wind/isobaric/1000hPa/orthographic=-232.01,33.08,3000)
