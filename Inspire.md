@@ -184,3 +184,8 @@ Grant Kot's Multiphase Fluid 2.0
 ### Realtime? Earth wind
 
 [http://earth.nullschool.net/#current/wind/isobaric/1000hPa/orthographic=-232.01,33.08,3000](http://earth.nullschool.net/#current/wind/isobaric/1000hPa/orthographic=-232.01,33.08,3000)
+
+
+### Flat shdow
+
+[http://codepen.io/indamix/pen/djuwv](http://codepen.io/indamix/pen/djuwv)
