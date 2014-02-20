@@ -189,3 +189,13 @@ Grant Kot's Multiphase Fluid 2.0
 ### Flat shdow
 
 [http://codepen.io/indamix/pen/djuwv](http://codepen.io/indamix/pen/djuwv)
+
+
+### Heart
+
+[http://codepen.io/tvolodimir/pen/wqKuJ](http://codepen.io/tvolodimir/pen/wqKuJ)
+
+
+### Orbital Light tracer
+
+[http://codepen.io/jackrugile/pen/aCzHs](http://codepen.io/jackrugile/pen/aCzHs)
