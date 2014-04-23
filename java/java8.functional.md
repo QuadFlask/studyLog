@@ -32,7 +32,7 @@ Collections.sort(personList, (p1, p2) -> p1.getName().compaerTo(p2.getName()));
 - `BineryOperator`
 
 
-#### `Predicate`
+### `Predicate`
 
  조건 판단용?
 
@@ -65,4 +65,4 @@ Collections.sort(personList, (p1, p2) -> p1.getName().compaerTo(p2.getName()));
   : 인풋만 리턴
 
 
-### 
+### `Supplier`
