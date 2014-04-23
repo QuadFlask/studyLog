@@ -42,9 +42,9 @@ Collections.sort(personList, (p1, p2) -> p1.getName().compaerTo(p2.getName()));
   : 다른 `Predicate`와 Short circuit logical 연산 
 
 
-### Consumer
+### `Consumer`
 
- 매소드 실행용?
+ 매소드 실행용? 수행 후, 아무것도 리턴하지 않음. 
 
 - `accept(T t)`
   : 주어진 파라미터에 대해 기능 수행 
@@ -53,4 +53,16 @@ Collections.sort(personList, (p1, p2) -> p1.getName().compaerTo(p2.getName()));
   : 일련의 작업들을 시퀀스로 실행 할 수 있도록
 
 
+### `Functional`
 
+ ? 한개의 인풋, 하나의 아웃풋을 가진, 일반적인 메소드를 대표함??
+ 
+- `R apply(T t)`
+  : 주어진 파라미터에 대해 기능 수행 후 R 리턴
+- `andThen(Function<? super R,? extends V> after)`
+- `compose(Function<? super V,? extends T> before)`
+- `identity()`
+  : 인풋만 리턴
+
+
+### 
