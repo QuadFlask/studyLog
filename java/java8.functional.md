@@ -90,14 +90,14 @@ java8 버전 부터 Collection 인터페이스에 `stream()`, `parallelStream()`
  
 - `sort(Comparator<? super T> arg)` : `Collections.sort` 와 같음.
  
-- `ListIterator` : An iterator for lists that allows the programmer to traverse the list in either direction, *modify the list **during iteration**, and obtain the iterator's current position in the list*. A ListIterator has no current element; its cursor position always lies between the element that would be returned by a call to previous() and the element that would be returned by a call to next()
+- `ListIterator` : An iterator for lists that allows the programmer to traverse the list in either direction, *modify the list during iteration, and obtain the iterator's current position in the list*. A ListIterator has no current element; its cursor position always lies between the element that would be returned by a call to previous() and the element that would be returned by a call to next()
 
 - `Spliterator` : [?????????????](http://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html)
 
 
 ### Stream ?
  
-Iterator 랑 비슷해 보임
+`Iterator` 랑 비슷해 보임
 
 `psersonList`에서 10살 이상인 사람들의 모든 나이의 합
 ```java 
