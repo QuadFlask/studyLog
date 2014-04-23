@@ -66,3 +66,40 @@ Collections.sort(personList, (p1, p2) -> p1.getName().compaerTo(p2.getName()));
 
 
 ### `Supplier`
+
+
+
+
+
+
+
+
+----
+
+
+
+## Closure
+
+
+## stream, filter, map, forEach
+
+java8 버전 부터 Collection 인터페이스에 stream(), parallelStream() 메소드가 생겻음.
+
+
+### <I> Stream ?
+ 
+Iterator 랑 비슷해 보임
+
+`psersonList`에서 10살 이상인 사람들의 모든 나이의 합
+```java 
+int sum = personList.stream() // personList 에서 시퀀스 스트림 가져오기..
+                    .filter(p->p.getAge()>=10) // 조건 - 필터링  return stream
+                    .mapToInt(p->p.getAge()) // 매핑 return IntStream
+                    .sum(); // 동작 
+```
+
+
+
+
+
+
