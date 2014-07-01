@@ -205,6 +205,21 @@ Grant Kot's Multiphase Fluid 2.0
 
 [http://codepen.io/andremichelle/pen/yIkzx](http://codepen.io/andremichelle/pen/yIkzx)
 
+
 ### Adobe Kuler color wheel
 
 [http://codepen.io/benknight/pen/nADpy](http://codepen.io/benknight/pen/nADpy)
+
+
+### iOS home screen icon move
+
+[http://codepen.io/og2t/pen/AqlLn](http://codepen.io/og2t/pen/AqlLn)
+
+
+### check wave
+
+[http://codepen.io/hakimel/pen/vDnmp](http://codepen.io/hakimel/pen/vDnmp)
+
+### color orbital
+
+[http://codepen.io/jackrugile/pen/DGenc](http://codepen.io/jackrugile/pen/DGenc)
