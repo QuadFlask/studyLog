@@ -204,3 +204,7 @@ Grant Kot's Multiphase Fluid 2.0
 ### Instable connection
 
 [http://codepen.io/andremichelle/pen/yIkzx](http://codepen.io/andremichelle/pen/yIkzx)
+
+### Adobe Kuler color wheel
+
+[http://codepen.io/benknight/pen/nADpy](http://codepen.io/benknight/pen/nADpy)
