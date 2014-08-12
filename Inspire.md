@@ -223,3 +223,8 @@ Grant Kot's Multiphase Fluid 2.0
 ### color orbital
 
 [http://codepen.io/jackrugile/pen/DGenc](http://codepen.io/jackrugile/pen/DGenc)
+
+
+### Gooey Preloader 블러로 처리하는듯.. 
+
+[http://codepen.io/lbebber/pen/cBIey] (http://codepen.io/lbebber/pen/cBIey)
