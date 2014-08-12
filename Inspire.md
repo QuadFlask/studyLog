@@ -225,6 +225,7 @@ Grant Kot's Multiphase Fluid 2.0
 [http://codepen.io/jackrugile/pen/DGenc](http://codepen.io/jackrugile/pen/DGenc)
 
 
-### Gooey Preloader 블러로 처리하는듯.. 
+### Gooey Preloader 블러한뒤, 컨트라스트 값을 줘서 마치 자연스럽게 물방울이 연결되게 연출함, 
+`-webkit-filter:blur(4px) contrast(1);`
 
 [http://codepen.io/lbebber/pen/cBIey] (http://codepen.io/lbebber/pen/cBIey)
