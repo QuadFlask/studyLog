@@ -229,3 +229,23 @@ Grant Kot's Multiphase Fluid 2.0
 `-webkit-filter:blur(4px) contrast(1);`
 
 [http://codepen.io/lbebber/pen/cBIey] (http://codepen.io/lbebber/pen/cBIey)
+
+
+### 거미 & 거미줄
+
+[http://codepen.io/run-time/pen/JbEFn](http://codepen.io/run-time/pen/JbEFn)
+
+
+### Simple parallax scroll
+
+[http://codepen.io/carmination/pen/ctgaz](http://codepen.io/carmination/pen/ctgaz)
+
+### Ring of fire
+
+[http://codepen.io/GabbeV/pen/DvfyK](http://codepen.io/GabbeV/pen/DvfyK)
+
+
+### Sparkle Particles
+
+[http://codepen.io/naoyashiga/pen/roaBy](http://codepen.io/naoyashiga/pen/roaBy)
+
