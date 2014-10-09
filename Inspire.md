@@ -249,3 +249,34 @@ Grant Kot's Multiphase Fluid 2.0
 
 [http://codepen.io/naoyashiga/pen/roaBy](http://codepen.io/naoyashiga/pen/roaBy)
 
+### Sparkling Loading
+
+[http://codepen.io/jackrugile/pen/JAKbg](http://codepen.io/jackrugile/pen/JAKbg)
+
+### The Webgloid
+
+[http://codepen.io/r3lgen/pen/vzLrl](http://codepen.io/r3lgen/pen/vzLrl)
+
+### Mafnetic field
+
+[http://codepen.io/thepheer/pen/yfkoC](http://codepen.io/thepheer/pen/yfkoC)
+
+### Colorful Cloth ribbon
+
+[http://codepen.io/loktar00/pen/lxEJc](http://codepen.io/loktar00/pen/lxEJc)
+
+### Conway's Game of Life
+
+[http://codepen.io/jackrugile/pen/ckdDl](http://codepen.io/jackrugile/pen/ckdDl)
+
+### Grid
+
+[http://codepen.io/superguigui/pen/KnEwq](http://codepen.io/superguigui/pen/KnEwq)
+
+### Css filter (물방울 두개 합치는 필터링 -> 블러 +  스레스홀드 적용)
+
+[http://codepen.io/samthejarvis/pen/rpIKz](http://codepen.io/samthejarvis/pen/rpIKz)
+
+### Generative Fractal Lines
+
+[http://codepen.io/MaxXiong/pen/auHBi](http://codepen.io/MaxXiong/pen/auHBi)
