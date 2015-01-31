@@ -288,3 +288,11 @@ Grant Kot's Multiphase Fluid 2.0
 ### Water fall!!?
 
 [http://codepen.io/jackrugile/pen/AokpF](http://codepen.io/jackrugile/pen/AokpF)
+
+### iOS Clock App icon
+
+[http://codepen.io/nicolazj/pen/PwjxYN](http://codepen.io/nicolazj/pen/PwjxYN)
+
+### iOS Settings App icon
+
+[http://codepen.io/nicolazj/pen/YPxqdM](http://codepen.io/nicolazj/pen/YPxqdM)
