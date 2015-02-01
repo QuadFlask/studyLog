@@ -51,7 +51,7 @@ ant debug
 	이렇게 빌드가 끝나면 `libs` 디렉터리에 각 cpu플랫폼에 대해서 빌드된녀석들이 나오는데, 총 용량이 69M 이 된다.
 
 
-> 이 모든것을 앱에 임베드 시키기엔 부담스러운데, 64 비트를 뺀다면 29.7M 이 된다. 또 mips 디바이스는 거의 없기때문에(뭔지 자세히 몰라서 [검색](https://www.google.co.kr/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#newwindow=1&q=android+mips+devices+list)했는데 [스택오버플로에 답변](http://stackoverflow.com/questions/25052234/statistics-about-android-devices-with-mips-processors)으론 2개의 공식적인 디바이스를 보았다고 하니 지원하지 않아도 될듯 하다. 결국, arm, x86만 지원하면 되기에, 18.7M 이 된다. 뭐 이정도는 납득가능해 보인다.
+	> 이 모든것을 앱에 임베드 시키기엔 부담스러운데, 64 비트를 뺀다면 29.7M 이 된다. 또 mips 디바이스는 거의 없기때문에(뭔지 자세히 몰라서 [검색](https://www.google.co.kr/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#newwindow=1&q=android+mips+devices+list)했는데 [스택오버플로에 답변](http://stackoverflow.com/questions/25052234/statistics-about-android-devices-with-mips-processors)으론 2개의 공식적인 디바이스를 보았다고 하니 지원하지 않아도 될듯 하다. 결국, arm, x86만 지원하면 되기에, 18.7M 이 된다. 뭐 이정도는 납득가능해 보인다.
 
 
 8. 필요한것만 빌드하기
