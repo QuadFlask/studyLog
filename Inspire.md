@@ -296,3 +296,11 @@ Grant Kot's Multiphase Fluid 2.0
 ### iOS Settings App icon
 
 [http://codepen.io/nicolazj/pen/YPxqdM](http://codepen.io/nicolazj/pen/YPxqdM)
+
+### DotLight + Sound
+
+[http://wonderfl.net/c/3D6u](http://wonderfl.net/c/3D6u)
+
+### SVG Low PolyLion
+
+[http://codepen.io/grayghostvisuals/pen/RNLgJP](http://codepen.io/grayghostvisuals/pen/RNLgJP)
