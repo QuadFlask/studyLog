@@ -10,18 +10,24 @@ drawableDirs = ['drawable-mdpi', 'drawable-hdpi', 'drawable-xhdpi', 'drawable-xx
 
 def main(argv):
 	cpCount = 0;
-	if len(argv) != 2:
+	targetDir = 'result'
+
+	if len(argv) > 2 or len(argv) < 1:
 		print """
 		usage
 		pattern targetDir
 		ex)
-		*white_18dp.png selectedDir
+		'*white_18dp' ['targetDir']
 		"""
 	else:
 		cpCount = 0;
+
+		if(len(argv) == 2):
+			targetDir = argv[1];
+		
 		for file in glob.glob('*/*/'+argv[0]+'.png'):
 			tokens = file.split('/')
-			target = argv[1] + '/' + '/'.join(tokens[-2:-1])+'/'
+			target = targetDir + '/' + '/'.join(tokens[-2:-1])+'/'
 			try:
 				if not os.path.exists(target):
 					os.makedirs(target)
