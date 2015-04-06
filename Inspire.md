@@ -304,3 +304,15 @@ Grant Kot's Multiphase Fluid 2.0
 ### SVG Low PolyLion
 
 [http://codepen.io/grayghostvisuals/pen/RNLgJP](http://codepen.io/grayghostvisuals/pen/RNLgJP)
+
+### LCD 3d digit clock
+
+[http://codepen.io/ge1doot/pen/JovXjw](http://codepen.io/ge1doot/pen/JovXjw)
+
+### Material Search animation
+
+[http://codepen.io/hone/pen/jERzmd](http://codepen.io/hone/pen/jERzmd)
+
+### Weather widget
+
+[http://codepen.io/ajerez/pen/KwYNWZ](http://codepen.io/ajerez/pen/KwYNWZ)
