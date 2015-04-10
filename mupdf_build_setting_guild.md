@@ -46,7 +46,7 @@ ant debug
 
 	`arm64-v8a`, `x86_64`, `mips64`, `armeabi-v7a`, `armeabi`, `x86`, `mips`
 
-	를 빌드한다. 꽤 오래 걸린다...(MacBook Pro (Retina, 15-inch, Mid 2014) i7 2.5GHz, 16GB 로 15분(+-5) 정도?)
+	를 빌드한다. 꽤 오래 걸린다...(MacBook Pro (Retina, 15-inch, Mid 2014) i7 2.5GHz, 16GB 로 10분(+-5) 정도?)
 	
 	이렇게 빌드가 끝나면 `libs` 디렉터리에 각 cpu플랫폼에 대해서 빌드된녀석들이 나오는데, 총 용량이 69M 이 된다.
 
@@ -56,9 +56,12 @@ ant debug
 
 8. 필요한것만 빌드하기
 
-	`jni/Application.mk` 에서 `APP_ABI := armeabi-v7a x86` 로 변경하자
+	`jni/Application.mk` 에서 `APP_ABI := armeabi-v7a armeabi x86` 로 변경하자
 	
 	그리고 `ndk-build`. 그전에 있던 `libs`, `objs` 디렉터리 는 지우고 하자.
-
+	
+	> LG 지플렉스2 에서는 오류(nativeLibraryDirectories ~~~ couldn't find ~~~)가 나는데, 그 이유가 해당 디바이스를 지원하는 .so 가 존재하지 않기 때문. 그래서 `armeabi` 를 추가해주자. 
+	
+	> > 여기서 잡지식으로, `armeabi` 이랑 `armeabi-v7a` 의 차이점은? -> floating point 관련해서 `armeabi-v7a`가 성능 향상이 있다고 함.
 
 끝!
