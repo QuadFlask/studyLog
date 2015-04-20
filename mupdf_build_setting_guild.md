@@ -1,11 +1,11 @@
-## MuPDF 안드로이드 빌드환경 셋팅하기 (1.6 버전)
+## MuPDF 안드로이드 빌드환경 셋팅하기 (1.6, 1.7 버전)
 
 1. http://www.mupdf.com/ 에 보면 최신 소스코드를 받을 수 있는 git repo 주소가 있다. 원하는 디렉터리에 클론
 
 	```
 git clone --recursive git://git.ghostscript.com/mupdf.git
 ```
-
+	> 이때, 그냥 클론만 하게 되면, mupdf가 의존하는 다른 서드파티라이브러리들이 클론되지 안는다. 반드시 --recursive 옵션을 넣어줘야 한다.
 
 2. 클론한 디렉터리에 README 파일을 읽어보면 기본적인 MuPDF를 위한 스태틱 라이브러리들을 로컬에 설치하는 명령어가 있다.
 
