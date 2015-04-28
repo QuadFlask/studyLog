@@ -25,7 +25,7 @@ RxJava
   `Observable` 합치기(그냥 스트림에서 나오는것 그대로 리턴)
 
 #### `zip`
-  `Observable` 합치기(모든 스트림에서 모두 onNext()가 호출된 후 리턴)
+  `Observable` 합치기(모든 스트림에서 모두 onNext()가 호출된 후 리턴. 즉 모두 올때까지 기다린다.)
 
 #### `publishSubject`
   `Observable` 만들 때 사용할 수 있음
@@ -36,5 +36,10 @@ RxJava
   
   Observable<View> observable = ps.asObservable();
   ```
+
+#### `retryWhen`
+  onError 일때 다시 시도할지 말지를 결정한다.
+  
+  > if a source Observable emits an error, pass that error to another Observable to determine whether to resubscribe to the source [참고](https://github.com/ReactiveX/RxJava/wiki/Error-Handling-Operators)
 
 
