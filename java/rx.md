@@ -27,6 +27,9 @@ RxJava
 #### `zip`
   `Observable` 합치기(모든 스트림에서 모두 onNext()가 호출된 후 리턴. 즉 모두 올때까지 기다린다.)
 
+#### `combineLatest`
+  `zip` 이랑 비슷하지만, 대신 각 `Observable`에서 나온 값들을 캐싱하고 있다. 
+
 #### `publishSubject`
   `Observable` 만들 때 사용할 수 있음
   ex)
