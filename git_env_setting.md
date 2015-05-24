@@ -26,9 +26,20 @@ master
 14. git reset 
 
 app-13@app-13 ~/temp/hello-git (master)$ git log
+
 Fri Sep 13 16:13:18 2013 +0900 74916a6 (HEAD, master) second commit  [QuadFlask]
+
 Fri Sep 13 15:42:11 2013 +0900 7aaca1d this is first commit  [app-13]
+
 app-13@app-13 ~/temp/hello-git (master)$ git reset --hard HEAD~1 // 현재 헤드에서 하나 전으로
+
 HEAD is now at 7aaca1d this is first commit
+
 app-13@app-13 ~/temp/hello-git (master)$ git log
+
 Fri Sep 13 15:42:11 2013 +0900 7aaca1d (HEAD, master) this is first commit  [app-13]
+
+15. fork repo 에서 원래 repo 머지하기
+ 1. git remote add upstream `repo url`
+ 2. git fetch upstream
+ 3. git merge upstream/master
