@@ -123,7 +123,7 @@ sample
 <script>
   // element registration
   Polymer({
-    is: "element-name",
+    is: "element-name", // is 프로퍼티는 커스텀 앨리먼트의 태그 이름이 됨
 
     // add properties and methods on the element's prototype
 
@@ -218,8 +218,85 @@ MyElement = Polymer({
 
 var el = new MyElement(42, 'octopus');
 ```
+커스텀 생성자에 대해서 두가지 명심해야 할것:
 
-https://www.polymer-project.org/1.0/docs/devguide/registering-elements.html
+- `factoryImpl` 매서드는  *오직* 생성자를 이용해서 앨리먼트를 생성할때만 호출된다. `factoryImpl` 매서드는 HTML 파서에 의해 마크업된 엘리먼트들 또는 `document.createElement`에 의해 생성된 앨리먼트에 대해선 호출되지 않는다. 
+- `factoryImpl` 매서드는 앨리먼트가 초기화 된 후 호출된다.(로컬 돔이 생성되고, 기본값이 셋팅되고 등등) [Ready 콜백과 앨리먼트 초기화]()에서 더 많은 정보를 확인하라.
+
+## 네이티브 HTML 엘리먼트 확장하기
+
+현재 폴리머는 오직 네이티브 HTML 엘리먼트 확장만 지원한다(예를들어 `input`, 또는 `button` 다른 커스텀 엘리먼트를 확장과 반대로, 미래에 지원될것이다).
+
+네이티브 HTML 앨리먼트를 확장하기 위해선 프로퍼티에  `extends` 프러퍼티를 확장하고자 하는 태그 이름을 셋팅한다.
+
+Exampl:
+
+```javascript
+MyInput = Polymer({
+
+  is: 'my-input',
+
+  extends: 'input',
+
+  created: function() {
+    this.style.border = '1px solid red';
+  }
+
+});
+
+var el1 = new MyInput();
+console.log(el1 instanceof HTMLInputElement); // true
+
+var el2 = document.createElement('input', 'my-input');
+console.log(el2 instanceof HTMLInputElement); // true
+```
+
+마크업에서 Type-extension 앨리먼트를 사용하기 위해선, *native*태그를 사용하고 `is` 애트리뷰트에 확장 타입 이름(extension type name)을 명시한다.
+
+## 라이프 사이클 콜백
+
+폴리머의 베이스 프로토타입은 폴리머에 필요한 빌트-인 피쳐들을 수행하기 위해 스탠다드 커스텀 앨리먼트 라이프사이클 콜백들을 구현한다.  훜(hooks) 들은 프로토타입에서  짧은 매소드 이름들을 사용한다.
+
+- `created` instead of `createdCallback`
+- `attached` instead of `attachedCallback`
+- `detached` instead of `detachedCallback`
+- `attributeChanged` instead of `attributeChangedCallback`
+
+로우 레벨 매서드를 사용함으로써 falback 할수 있다 if you prefer.(즉, 간단히 `createdCallback`을 사용할 수도 있다.)
+폴리머틑 추가적인 콜백을 추가하는데, `ready` , 이건 폴리머가 앨리먼트의 로컬 돔을 만들고 초기화가 끝났을때 호출된다. 
+
+Example:
+
+```javascript
+MyElement = Polymer({
+
+  is: 'my-element',
+
+  created: function() {
+    console.log(this.localName + '#' + this.id + ' was created');
+  },
+
+  attached: function() {
+    console.log(this.localName + '#' + this.id + ' was attached');
+  },
+
+  detached: function() {
+    console.log(this.localName + '#' + this.id + ' was detached');
+  },
+
+  attributeChanged: function(name, type) {
+    console.log(this.localName + '#' + this.id + ' attribute ' + name +
+      ' was changed to ' + this.getAttribute(name));
+  }
+
+});
+```
+
+## Ready 콜백과 앨리먼트 초기화
+
+`ready` 매서드는 앨리먼트의 라이프사이클의 한 부분이며, 자동적으로 호출된 후 앨리먼트의 템플릿 
+
+
 
 # Developer Guide
 
