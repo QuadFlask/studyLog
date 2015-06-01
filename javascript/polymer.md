@@ -292,10 +292,73 @@ MyElement = Polymer({
 });
 ```
 
-## Ready 콜백과 앨리먼트 초기화
+### Ready 콜백과 앨리먼트 초기화
 
-`ready` 매서드는 앨리먼트의 라이프사이클의 한 부분이며, 자동적으로 호출된 후 앨리먼트의 템플릿 
+`ready` 매서드는 앨리먼트의 라이프사이클의 한 부분이며, 자동적으로 호출된 후 앨리먼트의 템플릿  ....??....
+앨리먼트가 만들어 졌을대 앨리먼트의 로컬돔을 조작하기 위해서 `ready`를 구현할 수 있다.
 
+```javascript
+ready: function() {
+  <!-- access a local DOM element by ID using this.$ -->
+  this.$.header.textContent = 'Hello!';
+}
+```
+
+> Note: 이 예제는 로컬 돔에 접근하기 위해 [자동 노드 검색(Automatic node finding)]()을 사용한다.
+
+앨리먼트의 기본 초기화 순서:
+
+- `create` 콜백
+- 로컬돔 생성(constructed)
+- 기본값 세팅
+- `ready` 콜백
+- `factoryImpl` 콜백
+- `attached` 콜백
+
+특히, `ready` 콜백은 항상 `attached`전에 호출된다.
+앨리먼트의 로컬돔과 인터렉트가 필요한 코드는 `ready` 콜백을 사용하라.
+
+### 콜백 등록 
+
+`Polymer.Base`는 `Polymer`가 호출하는 `registerCallback`도 `Polymer.Base`가 폴리머 피쳐를 위한 [레이어링 시스템]()을  제공하기 위해 구현한다.?
+
+## 호스트의 정적 애트리뷰트
+
+생성시점에 커스텀 앨리먼트가 HTML 애트리뷰트가 필요하다면, 프로토타입에 `hostAttributes` 프로퍼티로 정의될 수 있는데, 키-벨류로. 밸류는 HTML 애트리뷰트가 문자열만 가능한것처럼 문자열로 제공되어야 하고 기본적인 `serialize` 매서드는 문자열로 변환되기 위해 사용된다. 따라서 `true`는 빈 애트리뷰트로 직렬화될것이고 `false`는 아무런 애트리뷰트를 세팅하지 않을것이다.?
+
+Example
+
+```javascript
+<script>
+
+  Polymer({
+
+    is: 'x-custom',
+
+    hostAttributes: {
+      role: 'button',
+      'aria-disabled': true,
+      tabindex: 0
+    }
+
+  });
+
+</script>
+```
+
+의 결과로:
+
+```javascript
+<x-custom role="button" aria-disabled tabindex="0"></x-custom>
+```
+
+> Note: 0.9버전에선, `hostAttribute` 로 `class` 애트리뷰트는 설정 될 수 없다.
+
+## Behaviors
+
+앨리먼트들은 프로퍼티, 라이프사이클 콜백, 이벤트 리스너, 다른 피쳐들을 정의할 수 있는*behaviors*형태로 코드를 공유할 수 있다.
+
+## 클래스 스타일 생성자 
 
 
 # Developer Guide
