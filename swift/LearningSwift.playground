@@ -1,0 +1,94 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+var x = 10
+
+for index in 1...20{
+    let y = index*x--
+}
+
+
+var list = ["eggs", "milk"]
+list.append("can")
+
+list += ["dog"]
+
+list += ["cat"]
+
+
+list[2...3] = ["banana","apple"]
+
+
+for (index, value) in enumerate(list) {
+    println("\(index) - \(value)")
+}
+
+var ints = [Int]()
+
+var doubles = [Double](count: 3,repeatedValue: 0.0)
+
+var airports:[String:String] = ["YYZ":"Toronto Pearson", "DUB":"Dublin"]
+
+if let airportName = airports["DUB"]{
+    println("\(airportName)")
+}
+
+func sayHello(personName:String) -> String{
+    let greeting = "Hello, " + personeName + "!";
+    return greeting;
+}
+
+println(sayHello("flask"))
+
+func halfOpenRangeLength(#start:Int, #end:Int)->Int{
+    return end - start
+}
+
+println(halfOpenRangeLength(start:1, end:10))
+
+func join(string s1:String, toString s2:String, withJoiner joiner:String = " ")->String{
+    return s1 + joiner + s2
+}
+
+println(join(string: "hello", toString: "world"))
+
+func alignRight(var string:String, c:Int, pad:Character) -> String {
+    let amountToPad = c - count(string)
+    if amountToPad < 1 {
+        return string
+    }
+    let padString = String(pad)
+    
+    for _ in 1...amountToPad{
+        string = padString + string
+    }
+    return string
+}
+
+
+let paddedString = alignRight("hello", 10, "-")
+println(paddedString)
+
+
+let names = ["chris", "flask", "alex", "ewa", "barry", "apple"]
+
+func backwords(s1:String, s2:String)->Bool{
+    return s1>s2
+}
+
+var reversed = sorted(names, backwords)
+
+for name in names {
+    println(name)
+}
+
+reversed = sorted(names, {(s1:String, s2:String)->Bool in return s1 > s2
+})
+
+reversed = sorted(names, { s1, s2 in return s1 > s2 }) // by type infference
+reversed = sorted(names, { s1, s2 in s1 > s2 })
+reversed = sorted(names, { $0 > $1 })
+reversed = sorted(names, >) // operator function
+
+
