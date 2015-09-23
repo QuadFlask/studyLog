@@ -120,6 +120,8 @@ Q.async(function*() {
 
 ### 만약 ES7 이 가능하다면?
 
+[https://jakearchibald.com/2014/es7-async-functions/](https://jakearchibald.com/2014/es7-async-functions/)
+
 ES7의 `async`, `await` 키워드를 사용하면 좋음
 
 `async` == `Q.async`
