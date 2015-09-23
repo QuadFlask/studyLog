@@ -116,3 +116,57 @@ Q.async(function*() {
 })();
 
 ```
+
+
+### 만약 ES7 이 가능하다면?
+
+ES7의 `async`, `await` 키워드를 사용하면 좋음
+
+`async` == `Q.async`
+
+`awiat` == `yield`
+
+
+#### ES6
+
+```javascript
+
+function loadStory() {
+  return spawn(function *() {
+    try {
+      let story = yield getJSON('story.json');
+      addHtmlToPage(story.heading);
+      for (let chapter of story.chapterURLs.map(getJSON)) {
+        addHtmlToPage((yield chapter).html));
+      }
+      addTextToPage("All done");
+    } catch (err) {
+      addTextToPage("Argh, broken: " + err.message);
+    }
+    document.querySelector('.spinner').style.display = 'none';
+  });
+}
+
+```
+
+
+#### ES7
+
+```javascript
+
+async function loadStory() {
+  try {
+    let story = await getJSON('story.json');
+    addHtmlToPage(story.heading);
+    for (let chapter of story.chapterURLs.map(getJSON)) {
+      addHtmlToPage((await chapter).html);
+    }
+    addTextToPage("All done");
+  } catch (err) {
+    addTextToPage("Argh, broken: " + err.message);
+  }
+  document.querySelector('.spinner').style.display = 'none';
+}
+
+```
+
