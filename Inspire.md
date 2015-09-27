@@ -316,3 +316,7 @@ Grant Kot's Multiphase Fluid 2.0
 ### Weather widget
 
 [http://codepen.io/ajerez/pen/KwYNWZ](http://codepen.io/ajerez/pen/KwYNWZ)
+
+### Galaxy
+
+[http://codepen.io/Astrak/pen/RWGxKv](http://codepen.io/Astrak/pen/RWGxKv)
