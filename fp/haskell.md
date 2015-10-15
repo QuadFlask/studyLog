@@ -1,14 +1,27 @@
-하스켈로 배우는 함수형 프로그래밍
+## 하스켈로 배우는 함수형 프로그래밍
 
-first class citizen : 일반적인 모든 오퍼레이션이 가능한 타입(?) int, float 같은 녀석들
+### REPL
 
-first class function : 함수가 first class citizen
+```
+$ ghci
+```
+> 인터프리터 키기
 
-high order function : 결과가 함수가 되거나 인수로 함수를 요구하는 함수
+```
+$ Prelude> :q
+```
+> 끄기
 
-Currying : 함수의 인자의 일부를 적용 하는??
 
-Currying function : 함수의 인자가 일부 적용되어 있는? 적용 가능한? 함수?
+* first class citizen : 일반적인 모든 오퍼레이션이 가능한 타입(?) int, float 같은 녀석들
+
+* first class function : 함수가 first class citizen
+
+* high order function : 결과가 함수가 되거나 인수로 함수를 요구하는 함수
+
+* Currying : 함수의 인자의 일부를 적용 하는??
+
+* Currying function : 함수의 인자가 일부 적용되어 있는? 적용 가능한? 함수?
 
 ```haskell
 inc :: Int -> Int
