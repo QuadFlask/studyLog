@@ -241,6 +241,83 @@ new Date(...[2015, 10, 24])
 
 ### Generators
 
+> 이건 위에서도 설명을 했으니,,,, 중요, 몰랐던 부분만
+> 
+> 위에서 봤던 `Symbol`이 여기에 쓰임!!
+> 
+> `g = generator(); g[Symbol.iterator]`는 이터레이터 프로토콜을 따른다(?adhere; 고수하다, 지지하다?)
+> 
+> 이렇게 이터레이터 프로토콜을 따르면 `Array.from(g)`, `[..g]`, `for (let item of g)` 이런데서 사용 가능하다!!
+> 
+> `yield`는 시퀀스의 다음 값을 리턴하는 표현식
+> 
+> `return`문은 시퀀스의 마지막 값을 리턴
+> 
+> `throw`문은 전체 제너레이터의 실행을 종료
+> 
+> 제너레이터의 맨 마지막에 도달하면 `{done: true}`, 맨 마지막에 도달한뒤로 `g.next()`호출해도 효과가 없다
+
+- Generator functions are a special kind of iterator that can be declared using the function* generator () {} syntax
+- Generator functions use yield to emit an element sequence
+- Generator functions can also use yield* to delegate to another generator function – or any iterable object
+- Generator functions return a generator object that’s adheres to both the iterable and iterator protocols
+	- Given g = generator(), g adheres to the iterable protocol because g[Symbol.iterator] is a method
+	- Given g = generator(), g adheres to the iterator protocol because g.next is a method
+	- The iterator for a generator object g is the generator itself: g[Symbol.iterator]() === g
+- Pull values using Array.from(g), [...g], for (let item of g), or just calling g.next()
+- Generator function execution is suspended, remembering the last position, in four different cases
+	- A yield expression returning the next value in the sequence
+	- A return statement returning the last value in the sequence
+	- A throw statement halts execution in the generator entirely
+	- Reaching the end of the generator function signals { done: true }
+- Once the g sequence has ended, g.next() simply returns { done: true } and has no effect
+
+#### 여기 중요!
+
+- **It’s easy to make asynchronous flows feel synchronous**
+	- Take user-provided generator function
+	- User code is suspended while asynchronous operations take place
+	- Call g.next(), unsuspending execution in user code
+
+
+### Promises
+
+
+### Maps
+
+
+### WeakMaps
+
+
+### Sets
+
+
+### WeakSets
+
+
+### Proxies
+
+
+### Replection
+
+
+### `Number`
+
+
+### `Math`
+
+
+### `Array`
+
+
+### `Object`
+
+
+### Strings and Unicode
+
+
+### Modules
+
 
 
 
