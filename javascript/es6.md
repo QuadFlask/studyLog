@@ -94,3 +94,161 @@ for (var v of foo()) {
 
 console.log( v ); // still `5`, not `6` :(
 ```
+
+
+
+## [ES6 Overview in 350 Bullet Points](https://ponyfoo.com/articles/es6)
+
+
+> ES6, Harmony, ES2015 는 같은 스팩을 지칭하는것. 하지만 ES2015가 정식 이름이 되었고, 이제부턴 ESXXXX 식으로 년도가 붙는 네이밍을 쓴다고 함. 그리고 매년 새 스펙이 나올거라능!! 벤더로 하여금 좀 더 새로운 피쳐들을 추가하는것을 장려하기위해...?
+
+
+### Assignment Destructuring
+
+> requirejs? 에서 처음 봤던 표현법인데 알고보니 언어 기능이었던!
+
+```javascript
+var {foo} = pony;
+// 는 아래와 같음
+var foo = pony.foo;
+
+// 심지어 배열에도 가능함
+[a,b] = [0,1]
+// a = 0, b = 1
+
+[a,,b] = [0,1,2]
+// a = 0, b = 2 이렇게 스킵!
+
+// 게다가 추가적인 변수없이 스왑으로도 사용 할 수 있다
+[a,b] = [b,a]
+
+// 함수에도 사용 한다!! 근데 잘 이해가 안되네
+
+```
+
+
+### Spread Operator and Rest Parameters
+
+> 나머지(rest) 파라미터는 기존 `argument` 보다 나음
+> 
+> 자바에서처럼 `...` 을 사용가능 하도록.
+
+```javascript
+// 배열을 함수에 파라미터로 주고 싶을때 `apply`를 사용하지 말고 rest를 사용하자!
+fn(...[1,2,3]) // == fn(1,2,3)
+
+// 배열 중간에 붙이기도 쉽다!
+[1, 2, ...[3, 4, 5], 6, 7]
+
+// 게다가 디스트럭쳐링도 쉽도!!
+[a, , ...rest] = [1,2,3,4,5]
+// a = 1, rest = [3,4,5]
+
+// new 할때 대입도 쉽다!!
+new Date(...[2015, 10, 24])
+```
+
+### Arrow Functions
+
+> 화살표 연산자...인데 자바(->)랑 달라서 계속 헷갈린다..
+> 
+> 구문적 스코프를 따르고(즉, this는 밖(부모)의 this와 같다)
+> 
+> `call`, `apply`같은 리플랙션 타입의 함수로 수정 할 수 없다.
+
+
+### Template Literals
+
+> 오!! 있었구나
+> 
+> ` 로 감싸면 되고, 리플레이스먼트부분은 jstl처럼 ${} 를 쓰면됨
+> 
+> ${} 안에 들어갈 식은 올바른 자바스크립트 표현식이면 됨. 변수나, 함수 호출 등
+
+
+### Object Literals
+
+> ES2015 오면서 신택스 슈가가 많이 추가된듯
+> 
+> 패스
+
+
+### Classes
+
+> 전통적인 클래스가 아니라 프로토타입기반의 상속의 신택스 슈가
+> 
+> `class`, `extends`, `static` 등의 키워드가 추가되었다
+
+### Let and Const
+
+> 변수 선언방법
+> 
+> `let`은 구문적 스토프, 블록 맨 위로 호이스팅되고(var 는 함수의 맨 위로 호이스팅되는 반면)
+> 
+> “Temporal Dead Zone” – TDZ for short
+
+- Starts at the beginning of the block where let foo was declared
+- Ends where the let foo statement was placed in user code (hoisiting is irrelevant here)
+- Attempts to access or assign to foo within the TDZ (before the let foo statement is reached) result in an error
+- Helps prevent mysterious bugs when a variable is manipulated before its declaration is reached
+
+> 
+> const는 상수 선언시 사용할 수 있고, 또한 블록 스코핑 호이스팅, TDZ
+> 
+> 중요! 할당은 반드시 해야 하고, 할당 실패시 조용히 실패함(즉, 스트릭트 모드를 써라! 그럼 익셉션이 발생할지니!)
+> 
+> ES6에선 함수는 블록 스코프임
+
+
+### Symbols
+
+> 새로운 프리미티브 타입!
+> 
+> `var symbol = Symbol()`로 새 심볼을 만들 수 있다.
+> 
+> `Symbol('foo')`로 디스크립션을 추가할 수도 있다 -> 디버깅하기 위한 용도로
+> 
+> 심볼은 이뮤터블, 유니크 하다. 타입은  `'symbol'`이므로 `typeof Symbol() === 'symbol'` 
+> 
+> `Symbol.for(key)` 글로벌 심볼을 만들 수 있다.
+> 
+> 역함수(ㅋㅋ?)로 `Symbol.keyFor(symbol)`로 키를 가져올 수 있음
+> 
+> 어따가 쓰는거지??? 
+
+
+### Iterators
+
+> 잘 알려진 `Symbol`이 이터레이터에 다른 오브젝트들을 할당하는데에 사용된다?
+> 
+> `var foo = { [Symbol.iterator]: iterable }` or `foo[Symbol.iterator] = iterable`
+> 
+> `iterable`은 `next`매서드를 가진 `iterator`를 리턴하는 매서드
+> `next`매서드는 `value`,`done` 두 프롭을 가진 옵젝을 리턴
+> 
+> `value`는 현재 이터레이트 되는 시퀀스의  현재 값
+> 
+> `done`는 더이상 할 아이템이 이터레이터에 남아 있지 않다는 플래그 프롭
+
+- Objects that have a [Symbol.iterator] value are iterable, because they subscribe to the iterable protocol
+- Some built-ins like Array, String, or arguments – and NodeList in browsers – are iterable by default in ES6
+- Iterable objects can be looped over with for..of, such as for (let el of document.querySelectorAll('a'))
+- Iterable objects can be synthesized using the spread operator, like [...document.querySelectorAll('a')]
+- You can also use Array.from(document.querySelectorAll('a')) to synthesize an iterable sequence into an array
+- Iterators are lazy, and those that produce an infinite sequence still can lead to valid programs
+- Be careful not to attempt to synthesize an infinite sequence with ... or Array.from as that will cause an infinite loop
+
+
+### Generators
+
+
+
+
+
+
+
+
+
+
+
+
