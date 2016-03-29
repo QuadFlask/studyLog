@@ -1,6 +1,34 @@
 # Javascript OOP
 [참고-aji님](https://github.com/niceaji/javascript-study/blob/gh-pages/doc/oop.md)
 
+# ECMA 2015 style
+
+`class` 키워드가 추가되었다. 그래서 프로토타입이 어쩌고 이럴필요 없음ㅋㅋ
+
+```javascript
+class Laptop {
+  constructor(owner) {
+    this.owner = owner;
+  }
+}
+
+class MacBook extends Laptop {
+  constructor(owner, spec) {
+    super(owner);
+    this.spec = spec;
+  }
+}
+```
+
+심지어 `static`, `get`, `set` 도 추가되었다....
+
+[참고: https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Classes](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Classes)
+
+
+---------------
+
+# ECMA 5 style
+
 ## 객체
 
 JS에서는 함수도 객체. 그래서 객체 만들때 함수를 가지고 만드는건가?
