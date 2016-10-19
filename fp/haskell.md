@@ -184,3 +184,44 @@ inc = (+1) 1
 ```
 > inc 함수는 이항연산자인 + 에 1이 적용되어 있는 함수
 
+
+
+
+## Codewars 
+
+### MakeLowerCase
+
+My solution
+```haskell
+module MakeLower where
+
+toLower :: Char -> Char
+toLower c = if c >= 'A' && c <= 'Z' then toEnum (fromEnum c + 32) else c
+
+makeLowerCase :: [Char] -> [Char]
+makeLowerCase str = map toLower str
+```
+
+Best practice
+```haskell
+module MakeLower where
+
+import Data.Char (toLower)
+
+makeLowerCase :: String -> String
+makeLowerCase = map toLower
+```
+> 그냥 이미 구현되어 있는 녀석을 `map` 으로 실행...
+
+
+test code
+```haskell
+import MakeLower
+import Test.Hspec
+import Test.QuickCheck
+
+main = hspec $ do
+  describe "The makeLowerCase function" $ do
+    it "should work for some examples" $ do
+      makeLowerCase "HELLO" `shouldBe` "hello"
+```
